@@ -19,7 +19,6 @@ export class Challenge extends Component {
          refreshList() {
            let randomNumber = Math.floor(Math.random() * 61 + 1);
            let apiUrl = "https://swapi.co/api/planets/" + randomNumber;
-           /*let apiUrl = 'https://swapi.co/api/planets/2'*/
 
            fetch(apiUrl)
              .then(response => response.json())
@@ -39,7 +38,7 @@ export class Challenge extends Component {
              });
          }
 
-         atualizaPagina() {
+    atualizaPagina() {
            window.location.reload();
          }
 
@@ -53,7 +52,7 @@ export class Challenge extends Component {
            return (
              <div className="App">
                <div className="divbtn">
-               <Button onClick={this.atualizaPagina} variant="outline-warning">Random Planet</Button>
+               <Button onClick={this.atualizaPagina} variant="outline-warning" class="">Random Planet</Button>
                </div>
                
 

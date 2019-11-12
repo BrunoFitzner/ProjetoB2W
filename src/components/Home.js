@@ -28,8 +28,6 @@ export class Home extends Component {
                     </Button>
                     </NavLink>
                 </div>
-
-                
             </div>
         )
     }
